@@ -1,9 +1,13 @@
 import { Github, Linkedin, LinkedinIcon, LucideLinkedin, Mail, Phone } from 'lucide-react'
 import React from 'react'
+import Navbar from '../Components/Navbar'
 
 const Profile = () => {
   return (
+    <>
+    <Navbar/>
     <div className='h-screen w-screen bg-slate-90 flex  flex-col'>
+
       <div className='h-[80%] w-screen flex justify-center items-center'>
             <div className='h-screen w-screen flex flex-col justify-center ml-6'>
                 <div className=' w-[80%] h-[10%] my-5 text-black text-3xl font-serif '>HELLO!! I'M RASHWANTH</div>
@@ -20,6 +24,7 @@ const Profile = () => {
           <div><Phone className='text-white h-10 w-10'/></div>
         </div>
     </div> 
+    </>
   )
 }
 
